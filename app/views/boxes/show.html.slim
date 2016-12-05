@@ -86,6 +86,21 @@
               Gemfile
               ...
 
+      p If have not a rails project, the structure is:
+      p
+        pre
+          | project/
+              railsbox/
+                ansible/
+                development/
+                  Vagrantfile
+              Gemfile
+
+      p And <kbd>Gemfile</kbd> created by hand
+      p
+        pre
+          | source 'https://rubygems.org'
+            gem 'rails'
 
       h2 Start VM
       p Go to the <kbd>railsbox</kbd> directory and type <kbd>vagrant up</kbd>. vagrant will download the base box and provision it with ansible using your configuration.
